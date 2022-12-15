@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        GoodStudent student1= new GoodStudent("Alan Turing", 191254, 3.56, "Yes");
-        GoodStudent student2= new GoodStudent("Florence Nightingale", 182010, 3.89, "No");
-        GoodStudent student3= new GoodStudent("Grace Hopper", 190692, 3.99, "Yes");
+        GoodStudent student1= new GoodStudent("Alan Turing", 191254, 3.56, true);
+        GoodStudent student2= new GoodStudent("Florence Nightingale", 182010, 3.89, false);
+        GoodStudent student3= new GoodStudent("Grace Hopper", 190692, 3.99, true);
         System.out.println(student1.toString());
         student2.setId(95366);
         student2.setGpa(3.92);

@@ -7,37 +7,23 @@ public class GoodStudent
     private boolean isCsStudent;
 
     //creates a student object fully
-    public GoodStudent(String name, int id, double gpa, String isCsStudent)
+    public GoodStudent(String name, int id, double gpa, boolean isCsStudent)
     {
         firstName = name.substring(0,name.indexOf(" "));
         lastName = name.substring(name.indexOf(" ")+1);
         this.id = id;
         this.gpa = gpa;
-        if(isCsStudent.equals("Yes"))
-        {
-            this.isCsStudent = true;
-        }
-        else
-        {
-            this.isCsStudent = false;
-        }
+        this.isCsStudent = isCsStudent;
     }//end of constructor full
 
     //creates a student object partially
-    public GoodStudent(String name, String isCsStudent)
+    public GoodStudent(String name, boolean isCsStudent)
     {
         firstName = name.substring(0,name.indexOf(" "));
         lastName = name.substring(name.indexOf(" ")+1);
         id = -1;
         gpa = -1;
-        if(isCsStudent.equals("Yes"))
-        {
-            this.isCsStudent = true;
-        }
-        else
-        {
-            this.isCsStudent = false;
-        }
+        this.isCsStudent = isCsStudent;
     }//end of constructor partially
 
 
